@@ -1,14 +1,18 @@
+import pytest
 def employee_info(name, emp_id, department, salary):
-    """
-    Returns a formatted string containing employee details.
-    """
-    return (
+    result = (
         f"Employee Name: {name}\n"
         f"Employee ID: {emp_id}\n"
         f"Department: {department}\n"
         f"Salary: {salary}"
     )
+    return result
 
 if __name__ == "__main__":
-    info = employee_info("Gaurav", "E101", "IT", 55000)
-    print(info)
+   
+        name = "Alice\n"
+        emp_id = "e101\n"
+        department = "IT\n"
+        salary = 55000
+
+        print(employee_info(name, emp_id, department, salary))
